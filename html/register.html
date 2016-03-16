@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://my.xiaoyun.com/register/shop -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://my.xiaoyun.com/favicon.ico">
+    <title>注册！！</title>
+    <link href="../register/vendors.min.css" rel="stylesheet">
+    <link href="../register/WdatePicker.css" rel="stylesheet">
+    <link href="../register/datepicker.css" rel="stylesheet">
+    <link href="../register/main.css" rel="stylesheet">
+    <link href="../register/dashboard.css" rel="stylesheet">
+    <link href="../register/device.css" rel="stylesheet">
+    <link href="../register/statistics.css" rel="stylesheet">
+    <link rel="stylesheet" href="../register/register.css">
+</head>
+<body>
+<div class="loader-loading"><img src="../register/loading.gif"></div>
+    <div class="col-xs-12 container-content">
+ <div>
+        <div class="row container-row">
+
+            <div class="navbar navbar-static-top ">
+                <div>
+                    <div id="navbar">
+                        <ul class="nav navbar-nav navbar-right"
+                            
+                        </ul>
+                    </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+            </div><!-- /.navbar -->
+
+
+<div class="container">
+    <h2 class="login">店铺用户注册</h2>
+    <div class="panel panel-default login">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-10">
+                    <h4>邮箱注册</h4>
+                </div>
+                <div class="col-sm-2">
+                    <a href="log_in.html" class="btn btn-info" role="button">已有账号？点击登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-body">
+            <div class="col-sm-9">
+                <form class="form-horizontal" action="log_in.html" method="post" onsubmit="return formCheck()">
+                    <input type="text" name="account-type" class="form-control form-hide" id="input-company" value="shop-owner">
+                    <div class="form-group">
+                        <label for="input-email" class="col-sm-2 control-label"><span class="color-red">*</span>邮箱</label>
+                        <div class="col-sm-4">
+                            <input type="email" name="email" required="" class="form-control" id="input-email" placeholder="该邮箱将作为您的登录账号">
+                        </div>
+                        <label id="email-check-warning" class="col-sm-6 right-label color-red"></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="color-red">*</span>用户名</label>
+                        <div class="col-sm-4">
+                            <input type="username" name="username" class="form-control" id="input-username" placeholder="您的昵称" required="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="color-red">*</span>密码</label>
+                        <div class="col-sm-4">
+                            <input type="password" required="" name="password" class="form-control" id="input-password" placeholder="请输入6-20位字符">
+                        </div>
+                        <label id="password-check-warning" class="col-sm-6 right-label color-red"></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="color-red">*</span>确认密码</label>
+                        <div class="col-sm-4">
+                            <input type="password" id="input-ensure-password" name="ensure-password" class="form-control" required="" placeholder="请确认您的密码">
+                        </div>
+                        <label id="ensure-password-check-warning" class="col-sm-6 right-label color-red"></label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="color-red">*</span>所在地区</label>
+                        <div class="col-sm-4" id="city-selector">
+                            
+<div class="city-selector" style="float: left;">
+    <select name="province" class="prov component" id="slt-province" data-item="-1">
+    <option value="-1" selected="">全部省份</option><option value="海外区域">海外区域</option><option value="安徽">安徽</option><option value="北京">北京</option><option value="重庆">重庆</option><option value="福建">福建</option><option value="甘肃">甘肃</option><option value="广东">广东</option><option value="广西">广西</option><option value="贵州">贵州</option><option value="海南">海南</option><option value="河北">河北</option><option value="黑龙江">黑龙江</option><option value="河南">河南</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="江苏">江苏</option><option value="江西">江西</option><option value="吉林">吉林</option><option value="辽宁">辽宁</option><option value="内蒙古">内蒙古</option><option value="宁夏">宁夏</option><option value="青海">青海</option><option value="山东">山东</option><option value="上海">上海</option><option value="陕西">陕西</option><option value="山西">山西</option><option value="四川">四川</option><option value="台湾">台湾</option><option value="天津">天津</option><option value="新疆">新疆</option><option value="西藏">西藏</option><option value="云南">云南</option><option value="浙江">浙江</option></select>
+    <select name="city" class="city component" id="slt-city" data-item="-1">
+    </select>
+</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">提交注册信息</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel panel-body">
+                        <label class="control-label">如果您是渠道商或店管家，您可以通过以下方式申请入驻：</label>
+                        <a href="#" class="btn btn-info" role="button">渠道商/店管家注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div><!--/row-->
+        <hr>
+        <footer>
+            <p>© 京ICP备09104241号-28 电话:010-84030059 © XiaoYun 2015&nbsp;Goyoo Networks Inc.&nbsp;All rights Reserved.</p>
+        </footer>
+    </div><!--/.container-->
+    <script src="../register/vendors.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.yun = {};
+    </script>
+    <script src="../register/main.js" type="text/javascript"></script>
+        <script src="../register/common.js"></script>
+        <script src="../register/city_data.js"></script>
+        <script src="../register/jquery.cityselect.js"></script>
+        <script src="../register/shop.js"></script>
+        <script src="../register/check_helper.js"></script>
+    
+
+    <script type="text/javascript">
+        (function ($)
+        {
+            'use strict';
+            $(document).ready(function () {
+
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

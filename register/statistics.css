@@ -1,0 +1,123 @@
+/* line 1, ../../sass/router_stats/statistics.scss */
+.component {
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+/* line 12, ../../sass/router_stats/statistics.scss */
+#stats-table-list {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+}
+/* line 17, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading {
+  padding: 20px;
+  background-color: white;
+  border-bottom: none;
+}
+/* line 21, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+/* line 27, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel > .input-search {
+  float: left;
+  width: 350px;
+  margin-right: 10px;
+}
+/* line 32, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel > .input-search .btn-search {
+  color: white;
+  background-color: #fd6947;
+}
+/* line 37, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel .page-title {
+  border-left: 2px solid #E50000;
+  padding: 0px 10px;
+  width: 100px;
+  margin-left: 17px;
+  margin-top: 8px;
+}
+/* line 44, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel .btn-search {
+  color: white;
+  background-color: #fd6947;
+  border-radius: 3px;
+  border-color: #f06647;
+  margin-right: 10px;
+}
+/* line 51, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel .btn-search:active {
+  background-color: #ff8467;
+  border-color: #ff6542;
+}
+/* line 57, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel .btn-settings {
+  color: white;
+  background-color: #68c666;
+  margin-right: 15px;
+  border-color: #4fba4d;
+  border-radius: 3px;
+}
+/* line 64, ../../sass/router_stats/statistics.scss */
+#stats-table-list .panel-heading .separator .search-panel .btn-settings:active {
+  background-color: #8bdc89;
+  border-color: #7fd07d;
+}
+/* line 72, ../../sass/router_stats/statistics.scss */
+#stats-table-list .table {
+  margin-bottom: 0;
+  border: 1px solid #dbdbdb;
+}
+/* line 76, ../../sass/router_stats/statistics.scss */
+#stats-table-list .table thead {
+  background-color: #f7f8fa;
+}
+/* line 79, ../../sass/router_stats/statistics.scss */
+#stats-table-list .table td, #stats-table-list .table th {
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+/* line 85, ../../sass/router_stats/statistics.scss */
+#stats-table-list .table a {
+  text-decoration: none;
+}
+
+/* line 90, ../../sass/router_stats/statistics.scss */
+.color-grey {
+  color: #808080;
+}
+
+/* line 94, ../../sass/router_stats/statistics.scss */
+.title-nav {
+  padding-top: 15px;
+  color: #777;
+  margin-left: -15px;
+  float: left;
+  height: 50px;
+  padding-left: 45px;
+  padding-right: 25px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* line 106, ../../sass/router_stats/statistics.scss */
+.navbar-stats {
+  margin: 0px 20px 0px 20px;
+}
+
+/* line 110, ../../sass/router_stats/statistics.scss */
+.user-list {
+  font-size: 20px;
+  padding: 15px;
+}

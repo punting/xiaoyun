@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://account.xiaoyun.com/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>登陆！！</title>
+
+	<!-- Bootstrap -->
+	<link href="../log_in/bootstrap.min.css" rel="stylesheet">
+	<link href="../log_in/toastr.min.css" rel="stylesheet">
+	<link href="../log_in/main.css" rel="stylesheet">
+	<link href="../log_in/style.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="../js/html5shiv.js"></script>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- Fixed navbar -->
+<div class="cbox left header-nav" style="top:0;border:0;background:none;line-height: 0;width:100%" role="navigation">
+        <h1 style="margin:0;float:left;"><a href="#/"><span>小云WiFi</span>我的账户</a></h1>
+        <div class="pill" style="position:absolute;right:3%;top:15px;padding: 22px 10px;">
+            <a href="log_in.html">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <button class="cbtn navbar-toggle">sfsdaf</button>
+
+		<!-- <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        
+                        <li><a href="/login">登录</a></li>
+                        <li><a href="/register">注册</a></li>
+                        
+                    </ul>
+                </div> -->
+</div>
+
+<div class="cbox2 left header-nav" style="top:0;border:0;background:none;line-height: 0;width:100%;z-index:2;" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <h1 style="margin:0;float:left;"><a href="#">我的账户</a></h1>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav">
+    
+        <li><a href="log_in.html">登录</a></li>
+        <li><a href="register.html">注册</a></li>
+    
+    </ul>
+  </div>
+</div>
+<div class="container body">
+	<form class="form-horizontal login" action="index.html" method="post">
+		<fieldset>
+			<legend>请登录</legend>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="email">电子邮箱</label>
+
+				<div class="col-sm-3">
+					<input name="email" id="email" type="text" placeholder="请输入电子邮箱" class="form-control" required="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label" for="password">密码</label>
+				<div class="col-sm-3">
+					<input id="password" name="password" type="password" placeholder="请输入密码" class="form-control" required="">
+				</div>
+			</div>
+			<div class="form-group fg1">
+				<div class="col-sm-offset-1 col-sm-5 normal-text">
+					<div class="col-sm-5 c1"><a href="#" class="normal-text-danger">忘记密码？</a></div>
+					<div class="col-sm-5 c1"><a href="register.html" class="normal-text-info">注册新用户</a></div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-3">
+					<button id="btLogin" name="btLogin" class="btn btn-primary btn-block" type="submit">登录</button>
+				</div>
+			</div>
+			<div class="form-group fg2">
+				<div class="col-sm-offset-1 col-sm-5 normal-text">
+					<div class="col-sm-5 c1"><a href="#" class="normal-text-danger">忘记密码？</a></div>
+					<div class="col-sm-5 c1"><a href="register.html" class="normal-text-info">注册新用户</a></div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+    <style>
+        legend{color:#555!important;}
+        .body{background:#f8f8f8;border-radius:5px;border:1px solid #e7e7e7;color:#999!important;}
+        .normal-text a{font-size:14px;text-decoration:none;color:#777!important;}
+        .normal-text-danger:hover{color:#c44!important}
+        .normal-text-info:hover{color: #00bf00 !important}
+    </style>
+</div>
+<script src="../log_in/jquery.min.js"></script>
+<script src="../log_in/bootstrap.min.js"></script>
+<script src="../log_in/toastr.min.js"></script>
+<script>
+	$(document).ready(function () {
+		var notice = {};
+		for(var key in notice){
+			toastr[key](notice[key], notice.title||undefined);
+		}
+	});
+</script>
+
+
+</body></html>
